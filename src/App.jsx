@@ -1,5 +1,7 @@
 // src/App.jsx
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+//import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import TopNav from "./components/TopNav";
 import JavaLayout from "./layouts/JavaLayout";
 import AWSLayout from "./layouts/AWSLayout";
@@ -11,7 +13,7 @@ import S3 from "./pages/aws/S3";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <TopNav />
       <Routes>
         <Route path="/" element={<Navigate to="/java/StreamAPI" />} />
@@ -29,7 +31,7 @@ function App() {
 
         {/* Add more top-level routes like /react, /sql, etc. here */}
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
