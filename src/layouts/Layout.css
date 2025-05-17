@@ -1,0 +1,28 @@
+.layout-container {
+    display: flex;
+    height: calc(100vh - 50px); /* subtract top nav height */
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidebar a.active {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }  
